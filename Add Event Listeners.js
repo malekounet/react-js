@@ -2,6 +2,14 @@
 
 Then, in componentWillUnmount(), remove this same event listener. You can pass the same arguments to document.removeEventListener(). It's good practice to use this lifecycle method to do any clean up on React components before they are unmounted and destroyed. Removing event listeners is an example of one such clean up action.
 */}
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+import React, { Component } from 'react';
+
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
